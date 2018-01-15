@@ -1,24 +1,14 @@
 def duplicate_numbers(s):
-    d = {}
-    for c in s:
-        if c not in dict.keys():
-            d[c] = 1
+    l = s.split()
+    for item in l:
+        if ''.join(sorted(item)) == '0123456789':
+            print('true', end=' ')
         else:
-            d[c] += 1
-    
-    for value in dict.values():
-        if value > 1:
-            print('False', end=' ')
-        else:
-            print('True', end=' ')
-
-
+            print('false', end=' ')
 
 
 
 if __name__ == '__main__':
-    sample = '0123456789 01234'
-    sample = sample.replace(' ', '')
-    print(duplicate_numbers(sample))
-
+    s = '0123456789 01234 01234567890 6789012345 012322456789'
+    print(duplicate_numbers(s))
 
