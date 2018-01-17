@@ -12,9 +12,13 @@ def collatz_between(first, last):
         if cycle > max_cycle:
             max_cycle, cycle = cycle, max_cycle
     return first, last, max_cycle
+<<<<<<< HEAD
 
 if __name__ == '__main__':
     print(collatz_between(1, 10))
     print(collatz_between(100, 200))
     print(collatz_between(1, 100))
     
+=======
+    
+>>>>>>> origin/master
